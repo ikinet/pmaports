@@ -24,7 +24,7 @@ deviceinfo_append_dtb="true"
 
 # Bootloader related
 deviceinfo_flash_method="fastboot"
-deviceinfo_kernel_cmdline="quiet loglevel=2"
+deviceinfo_kernel_cmdline="quiet loglevel=2 root=/dev/sda34 rootfstype=ext4 rw rootwait"
 deviceinfo_generate_bootimg="true"
 deviceinfo_bootimg_qcdt="false"
 deviceinfo_bootimg_mtk_mkimage="false"
@@ -43,4 +43,4 @@ deviceinfo_flash_sparse="true"
 deviceinfo_rootfs_image_sector_size="4096"
 
 # Support super partition flashing
-deviceinfo_super_partitions="/dev/sda36 /dev/sda36"
+# deviceinfo_super_partitions="/dev/sda36 /dev/sda36"
